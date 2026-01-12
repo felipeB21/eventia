@@ -2,7 +2,7 @@ import Link from "next/link";
 import { NavigationMenuDemo } from "./nav-menu";
 import { SessionNav } from "./user/session-nav";
 import { Search } from "./search";
-import { GalleryVerticalEnd } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { Suspense } from "react";
 import { Skeleton } from "./ui/skeleton";
 
@@ -21,7 +21,7 @@ export default function Navbar() {
             className="flex items-center gap-2 self-center font-medium"
           >
             <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
-              <GalleryVerticalEnd className="size-4" />
+              <Calendar className="size-4" />
             </div>
             Eventia
           </Link>

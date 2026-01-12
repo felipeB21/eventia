@@ -21,6 +21,7 @@ import {
 import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
 import Link from "next/link";
+import { getInitials } from "@/lib/utils";
 
 export function DropdownMenuUser({
   user,
@@ -33,12 +34,7 @@ export function DropdownMenuUser({
   };
 }) {
   const [isLoading, setIsLoading] = useState(false);
-  const initials = user.name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .toUpperCase()
-    .slice(0, 2);
+  const initials = getInitials(user.name);
 
   const handleLogout = async () => {
     setIsLoading(true);

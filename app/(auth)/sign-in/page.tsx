@@ -1,4 +1,4 @@
-import { GalleryVerticalEnd } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 import { LoginForm } from "@/components/form/login";
 import Link from "next/link";
@@ -12,7 +12,7 @@ export default function SignInPage() {
           className="flex items-center gap-2 self-center font-medium"
         >
           <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
-            <GalleryVerticalEnd className="size-4" />
+            <Calendar className="size-4" />
           </div>
           Eventia
         </Link>
